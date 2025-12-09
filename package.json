@@ -9,7 +9,7 @@
 	},
 	"description": "@Precision decorator to define fixed or adaptive decimal precision for numeric values",
 	"devDependencies": {
-		"typescript": "~5.8"
+		"typescript": "~5.9"
 	},
 	"engines": {
 		"node": ">=18"
@@ -45,5 +45,5 @@
 		"build": "tsc"
 	},
 	"types": "./cjs/precision.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }

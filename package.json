@@ -23,17 +23,19 @@
 		"!*.map"
 	],
 	"keywords": [
-		"adaptative",
+		"adaptive",
 		"backend",
+		"decimal",
 		"decorator",
 		"fixed",
-		"it.rocks",
-		"decimals",
 		"float",
+		"formatting",
+		"it.rocks",
 		"number",
 		"numeric",
 		"precision",
-		"property"
+		"property",
+		"rounding"
 	],
 	"license": "ISC",
 	"name": "@itrocks/precision",
@@ -45,5 +47,5 @@
 		"build": "tsc"
 	},
 	"types": "./cjs/precision.d.ts",
-	"version": "0.0.2"
+	"version": "0.0.3"
 }

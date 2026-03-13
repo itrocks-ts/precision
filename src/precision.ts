@@ -1,5 +1,6 @@
-import { KeyOf, ObjectOrType }   from '@itrocks/class-type'
-import { decorate, decoratorOf } from '@itrocks/decorator/property'
+import { ObjectOrType } from '@itrocks/class-type'
+import { decorate }     from '@itrocks/decorator/property'
+import { decoratorOf }  from '@itrocks/decorator/property'
 
 const PRECISION = Symbol('precision')
 
@@ -19,7 +20,7 @@ export function Precision<T extends object>(minimum: number, maximum?: number)
 	return decorate<T>(PRECISION, { minimum, maximum })
 }
 
-export function precisionOf<T extends object>(target: ObjectOrType<T>, property: KeyOf<T>)
+export function precisionOf<T extends object>(target: ObjectOrType<T>, property: keyof T)
 {
 	return decoratorOf<PrecisionType, T>(target, property, PRECISION, WHOLE)
 }
